@@ -25,8 +25,8 @@ var twoSum = function (nums, target) {
  * @return {number}
  */
 var reverse = function (x) {
-    var int_max = 2147483647;
-    var int_min = -2147483648;
+    var int_max = 2147483647; // Math.pow(2, 31)  - 1
+    var int_min = -2147483648; // -Math.pow(2, 31)
     var result = 0;
     while (x != 0) {
         result = result * 10 + (x % 10);
